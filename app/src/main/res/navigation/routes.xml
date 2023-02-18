@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routes"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.kartotekaapp.fragments.Fragment1"
+        android:label="fragment_enter"
+        tools:layout="@layout/fragment_1" >
+        <action
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.kartotekaapp.fragments.Fragment2"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_2" >
+        <action
+            android:id="@+id/action_fragment2_to_fragment3"
+            app:destination="@id/fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.kartotekaapp.fragments.Fragment3"
+        android:label="fragment_company_search"
+        tools:layout="@layout/fragment_3" >
+        <action
+            android:id="@+id/action_fragment3_to_fragment4"
+            app:destination="@id/fragment4" />
+        <action
+            android:id="@+id/action_fragment3_to_fragment6"
+            app:destination="@id/fragment6" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.example.kartotekaapp.fragments.Fragment4"
+        android:label="fragment_company_card"
+        tools:layout="@layout/fragment_4" >
+        <action
+            android:id="@+id/action_fragment4_to_fragment5"
+            app:destination="@id/fragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment5"
+        android:name="com.example.kartotekaapp.fragments.Fragment5"
+        android:label="fragment_company_list"
+        tools:layout="@layout/fragment_5" >
+        <action
+            android:id="@+id/action_fragment5_to_fragment7"
+            app:destination="@id/fragment7" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment6"
+        android:name="com.example.kartotekaapp.fragments.Fragment6"
+        android:label="fragment_6"
+        tools:layout="@layout/fragment_6" >
+        <action
+            android:id="@+id/action_fragment6_to_fragment5"
+            app:destination="@id/fragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment7"
+        android:name="com.example.kartotekaapp.fragments.Fragment7"
+        android:label="fragment_7"
+        tools:layout="@layout/fragment_7" />
+</navigation>
